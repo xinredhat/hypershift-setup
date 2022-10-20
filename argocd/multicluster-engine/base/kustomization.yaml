@@ -4,9 +4,6 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - operatorgroup.yaml
-  - subscription.yaml
-  - multiclusterengine.yaml
-  - ManagedCluster.yaml
-  - ManagedClusterAddOn.yam
+  - multicluster-engine.yaml
 
 namespace: multicluster-engine
