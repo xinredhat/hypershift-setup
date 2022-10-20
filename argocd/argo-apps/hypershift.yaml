@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   source:
     path: argocd/hypershift/base
-    repoURL: https://gitlab.cee.redhat.com/xjiang/hypershift-setup.git
+    repoURL: https://github.com/xinredhat/hypershift-setup.git
     targetRevision: main
   project: default
   syncPolicy:
