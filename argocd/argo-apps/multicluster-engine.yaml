@@ -9,9 +9,9 @@ spec:
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
-  source:
+  source: 
     path: argocd/multicluster-engine/base
-    repoURL: 
+    repoURL: https://gitlab.cee.redhat.com/xjiang/hypershift-setup.git
     targetRevision: main
   project: default
   syncPolicy:
