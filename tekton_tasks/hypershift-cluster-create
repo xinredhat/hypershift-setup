@@ -1,0 +1,18 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: eks-cluster-create
+  labels:
+    app.kubernetes.io/version: "0.1"
+  annotations:
+    tekton.dev/pipelines.minVersion: "0.12.1"
+    tekton.dev/categories: Kubernetes
+    tekton.dev/tags: "aws, eks"
+    tekton.dev/displayName: "EKS Cluster Create"
+    tekton.dev/platforms: "linux/amd64"
+spec:
+  description: |
+    Create an EKS cluster.
+
+    This Task can be used to create an EKS cluster in an AWS account and fetch a kubeconfig that
+    can be used (in a context with kubectl) to make requests to the cluster.
