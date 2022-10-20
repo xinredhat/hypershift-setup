@@ -1,3 +1,4 @@
 ---
 resources:
   - multicluster-engine.yaml
+  - hypershift.yaml
